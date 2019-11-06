@@ -28,7 +28,7 @@
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
                 android:scaleType="centerCrop"
-                android:src="@color/badgePlaceholder"
+                android:src="@{itemLeague.badgeLeague}"
                 android:transitionName="imageAnimation"
                 android:contentDescription="@string/badge_league"
                 tools:layout_width="300dp"
@@ -60,6 +60,7 @@
                         android:textColor="@color/textWhite"
                         android:textSize="@dimen/text_big"
                         android:textStyle="bold"
+                        android:text="@{itemLeague.nameLeague}"
                         tools:text="English Premier League" />
 
                     <TextView
@@ -67,6 +68,7 @@
                         style="@style/LeagueItemText"
                         android:textColor="@color/textInverse"
                         android:textSize="@dimen/text_normal"
+                        android:text="@{itemLeague.dateLeague}"
                         tools:text="5 October 2018" />
 
                 </LinearLayout>

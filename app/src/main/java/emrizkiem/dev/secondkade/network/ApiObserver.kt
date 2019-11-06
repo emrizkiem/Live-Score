@@ -6,7 +6,7 @@ import io.reactivex.disposables.Disposable
 
 abstract class ApiObserver<T> constructor(private val compositeDisposable: CompositeDisposable) : Observer<T> {
     override fun onComplete() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
     }
 
     override fun onSubscribe(d: Disposable) {
