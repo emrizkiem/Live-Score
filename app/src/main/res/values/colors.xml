@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#357295</color>
+    <color name="colorPrimaryDark">#004767</color>
+    <color name="colorAccent">#79AFD1</color>
+
+    <color name="backgroundContainer">#E1E2E1</color>
+    <color name="gold">#D8CE37</color>
+    <color name="whiteSmoke">#F3F9FF</color>
+    <color name="badgePlaceholder">#B0BEC5</color>
+    <color name="themePrimary">#70CEFF</color>
+
+    <color name="textBlack">#707070</color>
+    <color name="textWhite">#F5F5F6</color>
+    <color name="textInverse">#deffffff</color>
+</resources>

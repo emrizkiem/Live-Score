@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    
+    <data>
+        <variable
+            name="itemLeague"
+            type="emrizkiem.dev.secondkade.feature.league.viewmodel.ItemLeagueViewModel" />
+    </data>
+    
+    <androidx.cardview.widget.CardView
+        android:id="@+id/item_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_margin="@dimen/item_spacing_full"
+        style="@style/ItemTheme">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <emrizkiem.dev.secondkade.util.ProportionalImageView
+                android:id="@+id/item_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@color/badgePlaceholder"
+                android:transitionName="imageAnimation"
+                android:contentDescription="@string/badge_league"
+                tools:layout_width="300dp"
+                tools:src="@tools:sample/avatars" />
+
+            <LinearLayout
+                android:id="@+id/item_footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/themePrimary"
+                android:gravity="center_vertical"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                    android:layout_marginEnd="@dimen/activity_vertical_margin"
+                    android:layout_marginStart="@dimen/activity_vertical_margin"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/item_title"
+                        style="@style/LeagueItemText"
+                        android:lines="1"
+                        android:textColor="@color/textWhite"
+                        android:textSize="@dimen/text_big"
+                        android:textStyle="bold"
+                        tools:text="English Premier League" />
+
+                    <TextView
+                        android:id="@+id/item_date"
+                        style="@style/LeagueItemText"
+                        android:textColor="@color/textInverse"
+                        android:textSize="@dimen/text_normal"
+                        tools:text="5 October 2018" />
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/item_bookmark"
+                    style="@style/BookmarkButton"
+                    android:contentDescription="@string/text_bookmark"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        
+    </androidx.cardview.widget.CardView>
+
+</layout>
